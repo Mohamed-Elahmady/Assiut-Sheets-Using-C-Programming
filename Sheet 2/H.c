@@ -25,12 +25,12 @@ int main(){
 bool prime(int num){
     if (num == 1)
         return false;
-    else if(num == 1)
+    else if(num == 2)
         return true;
-        
-    for (short i = 2; i < num; i++)
+
+    for (short i = 2; i*i <= num; i++)
     {
-        if(n%i == 0){
+        if(num%i == 0){
             return false;
         }
     }
